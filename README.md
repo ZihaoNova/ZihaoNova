@@ -24,19 +24,11 @@ I work on practical geospatial systems where model behavior, raster correctness,
 ![GDAL](https://img.shields.io/badge/GDAL-5CAE58?style=flat-square)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 
-## 🧩 How I Think About Geospatial Simulation
+## 🧩 Geospatial Simulation Workflow
 
-```mermaid
-flowchart LR
-    A["Scenario inputs"] --> B["Raster preprocessing"]
-    B --> C["AOI smoke checks"]
-    C --> D["CA / Dask simulation"]
-    D --> E["Validation artifacts"]
-    E --> F["Interpretable outputs"]
-
-    C -. "fast feedback" .-> B
-    E -. "debug evidence" .-> D
-```
+| 01 · Inputs & assumptions | 02 · Simulation engine | 03 · Validation evidence |
+| --- | --- | --- |
+| Scenario settings, base rasters, class transitions, and demand targets | AOI smoke checks, windowed CA steps, Dask-backed raster processing | Diff rasters, summary metrics, boundary checks, and interpretable outputs |
 
 ## 📌 Portfolio Notes
 
