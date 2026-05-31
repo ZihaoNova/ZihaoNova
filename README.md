@@ -1,19 +1,12 @@
 # Hi, I'm Zihao Huang 👋
 
-Geospatial Python engineer building land-cover simulation, raster validation, and scalable spatial modeling workflows.
+**Geospatial Python engineer** building reliable land-cover simulation and raster validation workflows.
 
-Currently focused on **🌍 land-cover simulation** · **🛰️ raster workflows** · **⚙️ Dask/PyTorch pipelines**
+`land-cover simulation` · `GeoTIFF validation` · `AOI smoke checks` · `Dask/PyTorch pipelines`
 
-I work on practical geospatial systems where model behavior, raster correctness, and reproducible validation all matter. My goal is to turn large spatial simulation workflows into inspectable, testable, and reusable Python tools.
+I work on practical geospatial systems where model behavior, raster correctness, and reproducible validation all matter. My focus is turning large spatial simulation runs into inspectable, testable, and reusable Python workflows.
 
-## 🧭 Focus
-
-- Scenario-driven land-cover simulation and spatial change modeling
-- GeoTIFF validation workflows with AOI-first smoke checks
-- Windowed cellular automata over scalable Dask/PyTorch pipelines
-- Reproducible artifacts for comparing, debugging, and explaining outputs
-
-## 🛠️ Stack
+## 🛠️ Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -24,19 +17,39 @@ I work on practical geospatial systems where model behavior, raster correctness,
 ![GDAL](https://img.shields.io/badge/GDAL-5CAE58?style=flat-square)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 
-## 🧩 Geospatial Simulation Workflow
+## 🧭 How I Work
 
-| 01 · Inputs & assumptions | 02 · Simulation engine | 03 · Validation evidence |
-| --- | --- | --- |
-| Scenario settings, base rasters, class transitions, and demand targets | AOI smoke checks, windowed CA steps, Dask-backed raster processing | Diff rasters, summary metrics, boundary checks, and interpretable outputs |
+**1. Make assumptions visible**  
+Scenario settings, base-year rasters, class transitions, and demand targets should be explicit inputs, not hidden state.
 
-## 📌 Portfolio Notes
+**2. Test locally before scaling**  
+AOI smoke checks and windowed runs catch raster issues before expensive full-region simulations.
 
-| Area | Problem | Approach | Quality signal |
-| --- | --- | --- | --- |
-| 🌍 Land-cover simulation workflows | Large scenario runs can hide assumptions and make output changes hard to explain. | Build simulation pipelines with explicit scenario inputs, year-by-year outputs, and inspectable intermediate artifacts. | Reproducible rasters, clear demand assumptions, and comparison-ready outputs. |
-| 🛰️ Raster validation and AOI smoke checks | Full-raster checks are expensive, but silent raster regressions are costly. | Validate representative AOI windows first, then scale only when the local evidence is sound. | Fast GeoTIFF triplets, summaries, and focused mismatch analysis. |
-| ⚙️ Windowed CA and Dask pipelines | Chunked spatial simulation can introduce boundary behavior and allocation drift. | Trace window demand, CA allocation, and chunk-level artifacts through the real pipeline path. | Boundary-aware diagnostics, scalable execution, and debuggable simulation steps. |
+**3. Leave evidence behind**  
+Diff rasters, summary metrics, and boundary checks make model outputs easier to inspect, compare, and explain.
+
+## 📌 Project Directions
+
+### 🌍 Land-cover simulation workflows
+
+Scenario-driven simulation pipelines for spatial land-cover change.
+
+- **Builds:** year-by-year rasters, demand-driven transitions, scenario outputs
+- **Focus:** reproducibility, explicit assumptions, comparison-ready artifacts
+
+### 🛰️ Raster validation and AOI smoke checks
+
+Fast localized checks for large GeoTIFF workflows.
+
+- **Builds:** AOI triplets, mismatch summaries, diff rasters
+- **Focus:** catching raster regressions before full-raster runs
+
+### ⚙️ Windowed CA and Dask pipelines
+
+Scalable CA-style simulation over tiled raster windows.
+
+- **Builds:** chunk-aware processing, demand allocation traces, boundary diagnostics
+- **Focus:** performance, edge behavior, debuggable simulation steps
 
 ## ✅ What I Value
 
