@@ -51,16 +51,15 @@ Scalable CA-style simulation over tiled raster windows.
 - **Builds:** chunk-aware processing, demand allocation traces, boundary diagnostics
 - **Focus:** performance, edge behavior, debuggable simulation steps
 
-## ✅ What I Value
-
-- Reproducible geospatial workflows over one-off scripts
-- Fast localized validation before expensive full-raster runs
-- Clear assumptions, typed interfaces, and inspectable artifacts
-- Engineering choices that make spatial model behavior easier to explain
-
 ## 🤝 Collaboration
 
-I am interested in geospatial simulation, raster processing, and reliable Python tooling for spatial data workflows.
+I am interested in collaborations around geospatial simulation, raster processing, and reliable Python tooling for spatial data workflows.
+
+Good fits:
+
+- Land-cover simulation and scenario modeling
+- GeoTIFF validation, raster comparison, and AOI smoke testing
+- Python pipelines where correctness, reproducibility, and performance all matter
 
 - GitHub: [@ZihaoNova](https://github.com/ZihaoNova)
 - Project issues and discussions will be linked here as public repositories are published.
